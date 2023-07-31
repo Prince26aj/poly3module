@@ -14,17 +14,10 @@ This circuit template checks that c is the multiplication of a and b.
 
 To use this circuit, we can create an instance of the `Polygon()` template and pass in the values for a and b. For example:
 
-
-component main = Polygon(a=1, b=2);
-```
-
-This will create a circuit that checks that 1 * 2 = 2.
-
 ## Example
 
 The following code shows an example of how to use the `Polygon()` template:
 
-```
 pragma circom 2.0.0;
 
 template Polygon () {
@@ -58,14 +51,10 @@ template Polygon () {
 }
 
 component main = Polygon;
-```
 
-To compile this code, we can use the following commands:
-
-```
+## Commands
 npm i
-npx hardhat circom
-npx hardhat run scripts/deploy.ts
 
-This will create a file.
-```
+npx hardhat circom
+
+npx hardhat run scripts/deploy.ts
